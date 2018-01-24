@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: "update"
+    show-sql: "false"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQLDialect"
+
+  database:
+    driverClassName: "com.mysql.jdbc.Driver"
+  datasource:
+    url: "jdbc:mysql://localhost:3306/itemsharingdatabase"
+    username: "root"
+    password: "Rochester24"
+    dbcp2:
+    test-while-idle: "true"
+    validationQuery: "SELECT 1"
